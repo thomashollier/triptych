@@ -1,5 +1,8 @@
 <h1>Triptych</h1>
-This allows you to sync video playback across multiple raspberry pi mini computers.
+This allows you to sync video playback across multiple raspberry pi mini computers. I've only used this on 3 hosts at once but it should work on any number of machines.
+
+<h3>hardware setup</h3>
+All you need is raspberry pi each connected to a screen and to an ethernet hub. I've tested this with raspeberry pi2 B model.
 
 <h3>Set up openframeworks on your raspberry pi</h3>
 -Read this: http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690<br>
@@ -65,9 +68,11 @@ Copy the movie files somewhere onto your SD cards and make sure the "filename" v
 
 In theory, once that is done, you should be able to launch the machines. the process will automatically start, they will find each other and the movies will loop automatically
 
-A technical detail: this setup uses the linux program "screen", which allows you to launch the program in a separate shell.  That separate shell is launched at the end of the .bashrc file. The "if" statement ensures the command is only run from the machine main boot shell.
+<h4>Using screen and automatic startup at boot</h4>
 
+<h4>Helper scripts</h4>
+start_triptych, reboot_all, and poweroff_all are three utility scripts that allow the user to control all the machines at once from the master mahine.
 
-I would also try to spend a little time getting your laptop on the same network. Plug your mac's ethernet cable into the router, select the ethernet connection in system preferences network pane, select Manual under Configure IPv4 and put in the same values for the fields that you have in the etc/network/interfaces file, except for the IP Address which should be unique to your machine.
+<h4>extra machine</h4>
+I would also try to spend a little time getting another machine on the network so you can log into the various hosts to help with any setup issues.
 
-You can use the convenience scripts called "reboot_all" and "poweroff_all" which allow you to reboot or poweroff all machines from the master machine
