@@ -15,6 +15,7 @@ All you need is raspberry pi each connected to a screen and to an ethernet hub. 
 
 <h2>Set up openframeworks on your raspberry pi</h2>
 -Read this: http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690<br>
+-This was compiled against 0.8.4<br>
 -Put ofxOMXplayer stuff in addons and make sure the directory is named ofxOMXplayer<br>
 -Add gpu_mem=384 in /boot/config.txt<br>
 
