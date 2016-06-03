@@ -1,0 +1,21 @@
+<displays>
+    <display>
+        <type>master</type>
+        <hostname>pi1</hostname>
+        <filename>/home/pi/video/master.mov</filename>
+    </display>
+    <display>
+        <type>slave</type>
+        <hostname>pi2</hostname>
+        <filename>/home/pi/video/slave1.mov</filename>
+    </display>
+    <display>
+        <type>slave</type>
+        <hostname>pi3</hostname>
+        <filename>/home/pi/video/slave2.mov</filename>
+    </display>
+</displays>
+<settings>
+    <overlay>false</overlay>
+    <playfromram>true</playfromram>
+</settings>
