@@ -1,5 +1,12 @@
 <h1>Triptych</h1>
-This allows you to sync video playback across multiple raspberry pi mini computers. 
+This allows you to sync video playback across multiple raspberry pi mini computers. Once this is properly setup, it is designed to be fairly simple to operate in a gallery type environment.
+
+<h2>Keyboard controls during playback</h2>
+-space bar pauses/unpauses all the screens.
+-'r' key rewinds all to the beginning
+-'q' quits all the running programs
+-'w' quits all programs and reboots all the machines
+-'e' quits all programs and shuts down all the machines
 
 <h2>Hardware setup</h2>
 All you need is raspberry pi each connected to a screen and to an ethernet hub. Plug a keyboard into the master machine. I've tested this with raspeberry pi2 B model. I've only used this on 3 hosts at once but it should work on any number of machines.
