@@ -1,7 +1,11 @@
 <h1>Triptych</h1>
-This allows you to sync video playback across multiple raspberry pi mini computers. Once this is properly setup, it is designed to be fairly simple to operate in a gallery type environment.
+This allows you to sync video playback across multiple raspberry pi mini computers. Once this is properly setup, it is designed to be fairly simple to operate in a gallery type environment. One of the machines is designated as the master and the rest are slaves. When the program is launched on the master, it waits for all the slaves to come online, and when it launches on the slaves, it connects to the master and waits for instructions.
+
+<h2>Hardware setup</h2>
+All you need is raspberry pi each connected to a screen and to an ethernet hub. Plug a keyboard into the master machine. I've tested this with raspeberry pi2 B model. I've only used this on 3 hosts at once but it should work on any number of machines.
 
 <h2>Keyboard controls during playback</h2>
+The following controls are available from the master machine.
 <pre>
 -space bar pauses/unpauses all the screens.
 -'r' key rewinds all to the beginning
@@ -9,9 +13,6 @@ This allows you to sync video playback across multiple raspberry pi mini compute
 -'w' quits all programs and reboots all the machines
 -'e' quits all programs and shuts down all the machines
 </pre>
-
-<h2>Hardware setup</h2>
-All you need is raspberry pi each connected to a screen and to an ethernet hub. Plug a keyboard into the master machine. I've tested this with raspeberry pi2 B model. I've only used this on 3 hosts at once but it should work on any number of machines.
 
 <h2>Set up openframeworks on your raspberry pi</h2>
 -Read this: http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690<br>
