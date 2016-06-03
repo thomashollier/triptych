@@ -1,8 +1,10 @@
-http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690
+<h1>Triptych</h1>
 
-put ofxOMXplayer stuff in addons and make sure the directory is named ofxOMXplayer
+<h3>Set up openframeworks on your raspberry pi</h3>
+-Read this: http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690
+-Put ofxOMXplayer stuff in addons and make sure the directory is named ofxOMXplayer
+-Add gpu_mem=384 in /boot/config.txt
 
-Add gpu_mem=384 in /boot/config.txt
 
 sudo vi /etc/hostname
 Change the hostname to pi2 for the second machine and pi3 for the third.
