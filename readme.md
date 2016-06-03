@@ -2,7 +2,7 @@
 This allows you to sync video playback across multiple raspberry pi mini computers. 
 
 <h2>Hardware setup</h2>
-All you need is raspberry pi each connected to a screen and to an ethernet hub. I've tested this with raspeberry pi2 B model. I've only used this on 3 hosts at once but it should work on any number of machines.
+All you need is raspberry pi each connected to a screen and to an ethernet hub. Plug a keyboard into the master machine. I've tested this with raspeberry pi2 B model. I've only used this on 3 hosts at once but it should work on any number of machines.
 
 <h2>Set up openframeworks on your raspberry pi</h2>
 -Read this: http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690<br>
