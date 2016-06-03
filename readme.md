@@ -67,6 +67,15 @@ Make sure the IP's in line 2 and 3 are the ones of whatever machines you are cur
 Copy the movie files somewhere onto your SD cards and make sure the "filename" value in the xml file reflects the path.
 
 <h2>Automatic startup at boot</h2>
+Automatic login to the command line during boot.
+<pre>
+sudo vi /etc/inittab
+#comment out the following line
+#1:2345:respawn:/sbin/getty 115200 tty1
+#add this line
+1:2345:respawn:/bin/login -f pi tty1 </dev/tty1 >/dev/tty1 2>&1
+</pre>
+
 <h4>using "screen"</h4>
 I've been using the screen command to automatically start the process in its own shell at boot time. Add the following to the end of your .bashrc file:
 <pre>
