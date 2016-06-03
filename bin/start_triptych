@@ -1,0 +1,6 @@
+ssh pi@pi2 'killall triptych'
+ssh pi@pi3 'killall triptych'
+ssh pi@pi2 'screen -S trip -d -m /home/pi/bin/triptych'
+ssh pi@pi3 'screen -S trip -d -m /home/pi/bin/triptych'
+screen -S tript -m triptych
+

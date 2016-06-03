@@ -1,0 +1,5 @@
+ssh pi@pi2 'sudo reboot'
+ssh pi@pi3 'sudo reboot'
+sudo reboot
+
+

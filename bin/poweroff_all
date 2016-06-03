@@ -1,0 +1,5 @@
+ssh pi@pi2 'sudo poweroff'
+ssh pi@pi3 'sudo poweroff'
+sudo poweroff
+
+
