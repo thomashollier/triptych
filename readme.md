@@ -60,7 +60,7 @@ ff02::2		ip6-allrouters
 192.168.11.47 	pi3
 </pre>
 
-<h4>setup ssh keys</h4>
+<h4>Setup ssh keys</h4>
 In order to be able to shutdown and reboot the slaves from the master machine, you need to setup ssh keys so you can connect back and forth between the machines without needing to enter a password.
 <pre>
 First, on each machine:
@@ -101,6 +101,6 @@ fi
 <h4>Helper scripts</h4>
 start_triptych, reboot_all, and poweroff_all are three utility scripts that allow the user to control all the machines at once from the master mahine.
 
-<h4>extra machine</h4>
+<h4>Extra machine</h4>
 While I set these up, I also usually connect another machine on the network so I can log into the various hosts to help with any setup issues.
 
