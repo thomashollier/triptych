@@ -106,7 +106,7 @@ start_triptych, reboot_all, and poweroff_all are three utility scripts that allo
 <h4>Extra machine</h4>
 While I set these up, I also usually connect another machine on the network so I can log into the various hosts to help with any setup issues.
 
-<h4>To-do list</h4>
+<h2>To-do list</h2>
 -Right now, setup needs a copy of the same settings file and video clips on each machine. It would be good to only need those files on the master machine and have the binary send the data to the slaves as part of the automatic startup procedure. 
 -Right now, the location of the settings file is hard coded. It would be good to have the ability pass it in as a command line argument.
 -It would be more efficient to use IP multicasting to communicate to all the salves at the same time rather than establishing individual unicast communication to each, but I don't know how to do that with OSC.
